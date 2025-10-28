@@ -35,10 +35,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-brand-500">
-              PEACH
-            </div>
-            <div className="text-sm text-neutral-600 hidden sm:block">
+            <div className="text-lg sm:text-2xl font-bold text-brand-500">
               合同会社ピーチ
             </div>
           </Link>
