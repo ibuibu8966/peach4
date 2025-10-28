@@ -10,8 +10,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
-  const news = getNewsById(params.id);
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params;
+  const news = getNewsById(id);
 
   if (!news) {
     return {
@@ -25,8 +26,9 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   };
 }
 
-export default function NewsDetail({ params }: { params: { id: string } }) {
-  const news = getNewsById(params.id);
+export default async function NewsDetail({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const news = getNewsById(id);
 
   if (!news) {
     notFound();

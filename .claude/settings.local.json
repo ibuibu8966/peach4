@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Premium cyber-themed corporate website\n\n- Next.js 15 with App Router and TypeScript\n- Cyber blue neon design with glass morphism effects\n- Premium animations and multi-layer shadows\n- Responsive header with scroll-aware transparency\n- All pages: Home, About, Services, News, Contact, Legal, Privacy\n- BUPPAN MOBILE service integration with updated pricing\n- Contact form with validation\n- SEO optimization (sitemap, robots.txt)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nFix Next.js 15 async params compatibility\n\n- Update news detail page to use Promise<{ id: string }> for params\n- Add async/await for params destructuring\n- Fixes Vercel build error\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
