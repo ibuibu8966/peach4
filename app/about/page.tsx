@@ -11,30 +11,30 @@ export default function About() {
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Page Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-4 neon-text">
-            <span className="text-cyber-500">ABOUT</span> US
+          <h1 className="text-5xl font-bold mb-4 text-brand-500">
+            <span className="text-brand-500">ABOUT</span> US
           </h1>
           <div className="section-divider max-w-xs mx-auto mb-6"></div>
-          <p className="text-cyber-300 text-lg">
+          <p className="text-neutral-600 text-lg">
             合同会社ピーチについて
           </p>
         </div>
 
         {/* CEO Message */}
         <section className="mb-16">
-          <div className="cyber-card p-8 md:p-12">
+          <div className="business-card p-8 md:p-12">
             <div className="flex items-center mb-6">
               <div className="w-1 h-12 bg-cyber-500 mr-4 shadow-neon-blue"></div>
-              <h2 className="text-3xl font-bold text-cyber-500">代表挨拶</h2>
+              <h2 className="text-3xl font-bold text-brand-500">代表挨拶</h2>
             </div>
-            <div className="space-y-4 text-cyber-300 leading-relaxed">
+            <div className="space-y-4 text-neutral-600 leading-relaxed">
               <p>
                 合同会社ピーチのウェブサイトをご覧いただき、誠にありがとうございます。
               </p>
               <p>
-                私たちは、<span className="text-cyber-500 font-semibold">物販事業</span>、
-                <span className="text-cyber-500 font-semibold">オンラインサロン</span>、
-                <span className="text-cyber-500 font-semibold">MVNO事業</span>という3つの事業を通じて、
+                私たちは、<span className="text-brand-500 font-semibold">物販事業</span>、
+                <span className="text-brand-500 font-semibold">オンラインサロン</span>、
+                <span className="text-brand-500 font-semibold">MVNO事業</span>という3つの事業を通じて、
                 お客様の生活をより豊かにし、ビジネスの成功をサポートすることを使命としています。
               </p>
               <p>
@@ -46,13 +46,13 @@ export default function About() {
                 そして、BUPPAN MOBILEでは、NTTドコモの高品質な回線を利用したMVNOサービスを提供し、
                 お客様に安心・安全な通信環境をお届けしています。
               </p>
-              <p className="text-cyber-500 font-semibold pt-4">
+              <p className="text-brand-500 font-semibold pt-4">
                 これからも、お客様に寄り添い、共に成長していく企業であり続けます。
               </p>
-              <div className="pt-6 border-t border-dark-border mt-8">
-                <p className="text-right text-cyber-400">
+              <div className="pt-6 border-t border-neutral-200 mt-8">
+                <p className="text-right text-neutral-600">
                   合同会社ピーチ<br />
-                  代表社員 <span className="text-cyber-500 font-semibold text-lg">宮崎 忍</span>
+                  代表社員 <span className="text-brand-500 font-semibold text-lg">宮崎 忍</span>
                 </p>
               </div>
             </div>
@@ -61,51 +61,51 @@ export default function About() {
 
         {/* Company Information */}
         <section className="mb-16">
-          <div className="cyber-card p-8 md:p-12">
+          <div className="business-card p-8 md:p-12">
             <div className="flex items-center mb-8">
               <div className="w-1 h-12 bg-cyber-500 mr-4 shadow-neon-blue"></div>
-              <h2 className="text-3xl font-bold text-cyber-500">会社情報</h2>
+              <h2 className="text-3xl font-bold text-brand-500">会社情報</h2>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full">
                 <tbody className="divide-y divide-dark-border">
-                  <tr className="hover:bg-dark-bg/50 transition-colors">
-                    <td className="py-4 px-4 text-cyber-400 font-semibold w-1/3">会社名</td>
+                  <tr className="hover:bg-neutral-white/50 transition-colors">
+                    <td className="py-4 px-4 text-neutral-600 font-semibold w-1/3">会社名</td>
                     <td className="py-4 px-4 text-cyber-200">合同会社ピーチ</td>
                   </tr>
-                  <tr className="hover:bg-dark-bg/50 transition-colors">
-                    <td className="py-4 px-4 text-cyber-400 font-semibold">法人番号</td>
+                  <tr className="hover:bg-neutral-white/50 transition-colors">
+                    <td className="py-4 px-4 text-neutral-600 font-semibold">法人番号</td>
                     <td className="py-4 px-4 text-cyber-200">0400-03-023000</td>
                   </tr>
-                  <tr className="hover:bg-dark-bg/50 transition-colors">
-                    <td className="py-4 px-4 text-cyber-400 font-semibold">設立</td>
+                  <tr className="hover:bg-neutral-white/50 transition-colors">
+                    <td className="py-4 px-4 text-neutral-600 font-semibold">設立</td>
                     <td className="py-4 px-4 text-cyber-200">2023年7月19日</td>
                   </tr>
-                  <tr className="hover:bg-dark-bg/50 transition-colors">
-                    <td className="py-4 px-4 text-cyber-400 font-semibold">資本金</td>
+                  <tr className="hover:bg-neutral-white/50 transition-colors">
+                    <td className="py-4 px-4 text-neutral-600 font-semibold">資本金</td>
                     <td className="py-4 px-4 text-cyber-200">500,000円</td>
                   </tr>
-                  <tr className="hover:bg-dark-bg/50 transition-colors">
-                    <td className="py-4 px-4 text-cyber-400 font-semibold">代表社員</td>
+                  <tr className="hover:bg-neutral-white/50 transition-colors">
+                    <td className="py-4 px-4 text-neutral-600 font-semibold">代表社員</td>
                     <td className="py-4 px-4 text-cyber-200">宮崎 忍</td>
                   </tr>
-                  <tr className="hover:bg-dark-bg/50 transition-colors">
-                    <td className="py-4 px-4 text-cyber-400 font-semibold">所在地</td>
+                  <tr className="hover:bg-neutral-white/50 transition-colors">
+                    <td className="py-4 px-4 text-neutral-600 font-semibold">所在地</td>
                     <td className="py-4 px-4 text-cyber-200">
                       〒290-0255<br />
                       千葉県市原市
                     </td>
                   </tr>
-                  <tr className="hover:bg-dark-bg/50 transition-colors">
-                    <td className="py-4 px-4 text-cyber-400 font-semibold">メールアドレス</td>
+                  <tr className="hover:bg-neutral-white/50 transition-colors">
+                    <td className="py-4 px-4 text-neutral-600 font-semibold">メールアドレス</td>
                     <td className="py-4 px-4 text-cyber-200">
-                      <a href="mailto:peach.2023.7.19@gmail.com" className="text-cyber-500 hover:text-cyber-300 transition-colors">
+                      <a href="mailto:peach.2023.7.19@gmail.com" className="text-brand-500 hover:text-neutral-600 transition-colors">
                         peach.2023.7.19@gmail.com
                       </a>
                     </td>
                   </tr>
-                  <tr className="hover:bg-dark-bg/50 transition-colors">
-                    <td className="py-4 px-4 text-cyber-400 font-semibold">事業内容</td>
+                  <tr className="hover:bg-neutral-white/50 transition-colors">
+                    <td className="py-4 px-4 text-neutral-600 font-semibold">事業内容</td>
                     <td className="py-4 px-4 text-cyber-200">
                       <ul className="list-disc list-inside space-y-2">
                         <li>中古品及び金券の買取・販売業</li>
@@ -125,14 +125,14 @@ export default function About() {
 
         {/* Company History */}
         <section>
-          <div className="cyber-card p-8 md:p-12">
+          <div className="business-card p-8 md:p-12">
             <div className="flex items-center mb-8">
               <div className="w-1 h-12 bg-cyber-500 mr-4 shadow-neon-blue"></div>
-              <h2 className="text-3xl font-bold text-cyber-500">沿革</h2>
+              <h2 className="text-3xl font-bold text-brand-500">沿革</h2>
             </div>
             <div className="space-y-6">
-              <div className="flex group hover:bg-dark-bg/30 p-4 rounded-lg transition-all">
-                <div className="flex-shrink-0 w-32 text-cyber-500 font-bold group-hover:text-cyber-300 transition-colors">
+              <div className="flex group hover:bg-neutral-white/30 p-4 rounded-lg transition-all">
+                <div className="flex-shrink-0 w-32 text-brand-500 font-bold group-hover:text-neutral-600 transition-colors">
                   2023年7月
                 </div>
                 <div className="flex-grow">
@@ -140,8 +140,8 @@ export default function About() {
                   <p className="text-cyber-200">合同会社ピーチ設立</p>
                 </div>
               </div>
-              <div className="flex group hover:bg-dark-bg/30 p-4 rounded-lg transition-all">
-                <div className="flex-shrink-0 w-32 text-cyber-500 font-bold group-hover:text-cyber-300 transition-colors">
+              <div className="flex group hover:bg-neutral-white/30 p-4 rounded-lg transition-all">
+                <div className="flex-shrink-0 w-32 text-brand-500 font-bold group-hover:text-neutral-600 transition-colors">
                   2023年8月
                 </div>
                 <div className="flex-grow">
@@ -149,8 +149,8 @@ export default function About() {
                   <p className="text-cyber-200">BUPPAN MOBILEサービス開始</p>
                 </div>
               </div>
-              <div className="flex group hover:bg-dark-bg/30 p-4 rounded-lg transition-all">
-                <div className="flex-shrink-0 w-32 text-cyber-500 font-bold group-hover:text-cyber-300 transition-colors">
+              <div className="flex group hover:bg-neutral-white/30 p-4 rounded-lg transition-all">
+                <div className="flex-shrink-0 w-32 text-brand-500 font-bold group-hover:text-neutral-600 transition-colors">
                   2023年9月
                 </div>
                 <div className="flex-grow">
@@ -158,8 +158,8 @@ export default function About() {
                   <p className="text-cyber-200">オンラインサロン開設</p>
                 </div>
               </div>
-              <div className="flex group hover:bg-dark-bg/30 p-4 rounded-lg transition-all">
-                <div className="flex-shrink-0 w-32 text-cyber-500 font-bold group-hover:text-cyber-300 transition-colors">
+              <div className="flex group hover:bg-neutral-white/30 p-4 rounded-lg transition-all">
+                <div className="flex-shrink-0 w-32 text-brand-500 font-bold group-hover:text-neutral-600 transition-colors">
                   2025年10月
                 </div>
                 <div className="flex-grow">

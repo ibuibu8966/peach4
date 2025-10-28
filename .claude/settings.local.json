@@ -7,7 +7,13 @@
       "Bash(git remote add:*)",
       "Bash(git branch:*)",
       "Bash(git push:*)",
-      "Bash(git commit -m \"$(cat <<''EOF''\nFix Next.js 15 async params compatibility\n\n- Update news detail page to use Promise<{ id: string }> for params\n- Add async/await for params destructuring\n- Fixes Vercel build error\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(git commit -m \"$(cat <<''EOF''\nFix Next.js 15 async params compatibility\n\n- Update news detail page to use Promise<{ id: string }> for params\n- Add async/await for params destructuring\n- Fixes Vercel build error\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(npm install:*)",
+      "Bash(for file in about/page.tsx contact/page.tsx services/page.tsx news/page.tsx legal/page.tsx privacy/page.tsx)",
+      "Bash(do sed -i 's/cyber-card/business-card/g; s/text-cyber-500/text-brand-500/g; s/text-cyber-300/text-neutral-600/g; s/text-cyber-400/text-neutral-600/g; s/text-cyber-600/text-neutral-700/g; s/bg-dark-bg/bg-neutral-white/g; s/bg-dark-surface/bg-neutral-50/g; s/border-cyber-700/border-neutral-200/g; s/border-dark-border/border-neutral-200/g; s/neon-text/text-brand-500/g; s/text-neon-purple/text-brand-600/g' \"$file\")",
+      "Bash(done)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)"
     ],
     "deny": [],
     "ask": []

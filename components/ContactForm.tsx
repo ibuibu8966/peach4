@@ -88,11 +88,11 @@ export default function ContactForm() {
   return (
     <div className="max-w-2xl mx-auto">
       {submitStatus === 'success' ? (
-        <div className="cyber-card p-8 text-center">
+        <div className="business-card p-8 text-center">
           <div className="mb-6">
-            <div className="w-20 h-20 mx-auto bg-cyber-500/20 rounded-full flex items-center justify-center border-2 border-cyber-500 shadow-neon-blue">
+            <div className="w-20 h-20 mx-auto bg-brand-500/20 rounded-full flex items-center justify-center border-2 border-brand-500 shadow-neon-blue">
               <svg
-                className="w-10 h-10 text-cyber-500"
+                className="w-10 h-10 text-brand-500"
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -104,8 +104,8 @@ export default function ContactForm() {
               </svg>
             </div>
           </div>
-          <h3 className="text-2xl font-bold text-cyber-500 mb-4 neon-text">送信完了</h3>
-          <p className="text-cyber-300 mb-6">
+          <h3 className="text-2xl font-bold text-brand-500 mb-4 neon-text">送信完了</h3>
+          <p className="text-neutral-600 mb-6">
             お問い合わせありがとうございます。
             <br />
             内容を確認の上、担当者よりご連絡させていただきます。
@@ -118,10 +118,10 @@ export default function ContactForm() {
           </button>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="cyber-card p-8 space-y-6">
+        <form onSubmit={handleSubmit} className="business-card p-8 space-y-6">
           {/* Name Field */}
           <div>
-            <label htmlFor="name" className="block text-cyber-300 font-medium mb-2">
+            <label htmlFor="name" className="block text-neutral-600 font-medium mb-2">
               お名前 <span className="text-neon-pink">*</span>
             </label>
             <input
@@ -130,9 +130,9 @@ export default function ContactForm() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className={`w-full px-4 py-3 bg-dark-bg border ${
-                errors.name ? 'border-neon-pink' : 'border-cyber-700'
-              } rounded-lg focus:outline-none focus:border-cyber-500 text-cyber-100 transition-all duration-300 focus:shadow-neon-blue`}
+              className={`w-full px-4 py-3 bg-neutral-white border ${
+                errors.name ? 'border-neon-pink' : 'border-neutral-200'
+              } rounded-lg focus:outline-none focus:border-brand-500 text-cyber-100 transition-all duration-300 focus:shadow-neon-blue`}
               placeholder="山田 太郎"
             />
             {errors.name && (
@@ -147,7 +147,7 @@ export default function ContactForm() {
 
           {/* Email Field */}
           <div>
-            <label htmlFor="email" className="block text-cyber-300 font-medium mb-2">
+            <label htmlFor="email" className="block text-neutral-600 font-medium mb-2">
               メールアドレス <span className="text-neon-pink">*</span>
             </label>
             <input
@@ -156,9 +156,9 @@ export default function ContactForm() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className={`w-full px-4 py-3 bg-dark-bg border ${
-                errors.email ? 'border-neon-pink' : 'border-cyber-700'
-              } rounded-lg focus:outline-none focus:border-cyber-500 text-cyber-100 transition-all duration-300 focus:shadow-neon-blue`}
+              className={`w-full px-4 py-3 bg-neutral-white border ${
+                errors.email ? 'border-neon-pink' : 'border-neutral-200'
+              } rounded-lg focus:outline-none focus:border-brand-500 text-cyber-100 transition-all duration-300 focus:shadow-neon-blue`}
               placeholder="example@email.com"
             />
             {errors.email && (
@@ -173,7 +173,7 @@ export default function ContactForm() {
 
           {/* Subject Field */}
           <div>
-            <label htmlFor="subject" className="block text-cyber-300 font-medium mb-2">
+            <label htmlFor="subject" className="block text-neutral-600 font-medium mb-2">
               件名 <span className="text-neon-pink">*</span>
             </label>
             <input
@@ -182,9 +182,9 @@ export default function ContactForm() {
               name="subject"
               value={formData.subject}
               onChange={handleChange}
-              className={`w-full px-4 py-3 bg-dark-bg border ${
-                errors.subject ? 'border-neon-pink' : 'border-cyber-700'
-              } rounded-lg focus:outline-none focus:border-cyber-500 text-cyber-100 transition-all duration-300 focus:shadow-neon-blue`}
+              className={`w-full px-4 py-3 bg-neutral-white border ${
+                errors.subject ? 'border-neon-pink' : 'border-neutral-200'
+              } rounded-lg focus:outline-none focus:border-brand-500 text-cyber-100 transition-all duration-300 focus:shadow-neon-blue`}
               placeholder="お問い合わせ内容"
             />
             {errors.subject && (
@@ -199,7 +199,7 @@ export default function ContactForm() {
 
           {/* Message Field */}
           <div>
-            <label htmlFor="message" className="block text-cyber-300 font-medium mb-2">
+            <label htmlFor="message" className="block text-neutral-600 font-medium mb-2">
               メッセージ <span className="text-neon-pink">*</span>
             </label>
             <textarea
@@ -208,9 +208,9 @@ export default function ContactForm() {
               value={formData.message}
               onChange={handleChange}
               rows={6}
-              className={`w-full px-4 py-3 bg-dark-bg border ${
-                errors.message ? 'border-neon-pink' : 'border-cyber-700'
-              } rounded-lg focus:outline-none focus:border-cyber-500 text-cyber-100 transition-all duration-300 focus:shadow-neon-blue resize-none`}
+              className={`w-full px-4 py-3 bg-neutral-white border ${
+                errors.message ? 'border-neon-pink' : 'border-neutral-200'
+              } rounded-lg focus:outline-none focus:border-brand-500 text-cyber-100 transition-all duration-300 focus:shadow-neon-blue resize-none`}
               placeholder="お問い合わせ内容を詳しくご記入ください"
             />
             {errors.message && (

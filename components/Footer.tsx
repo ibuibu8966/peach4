@@ -4,25 +4,20 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-dark-surface border-t border-cyber-700/50 mt-16">
-      {/* Neon Top Border Effect */}
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-cyber-500 to-transparent opacity-50"></div>
-
+    <footer className="bg-neutral-50 border-t border-neutral-200 mt-16">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4 neon-text">
-              <span className="text-cyber-500">PEACH</span>
-              <span className="text-neon-purple ml-1">TECH</span>
+            <h3 className="text-lg font-bold mb-4 text-brand-500">
+              合同会社ピーチ
             </h3>
-            <p className="text-cyber-300 text-sm mb-2">合同会社ピーチ</p>
-            <p className="text-cyber-400 text-sm">
+            <p className="text-neutral-600 text-sm mb-2">
               〒290-0255<br />
-              千葉県市原市
+              千葉県市原市荻作530番地4
             </p>
-            <p className="text-cyber-400 text-sm mt-2">
-              Email: <a href="mailto:peach.2023.7.19@gmail.com" className="hover:text-cyber-500 transition-colors">
+            <p className="text-neutral-600 text-sm mt-2">
+              Email: <a href="mailto:peach.2023.7.19@gmail.com" className="text-brand-500 hover:text-brand-600 transition-colors">
                 peach.2023.7.19@gmail.com
               </a>
             </p>
@@ -30,35 +25,30 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-cyber-300">クイックリンク</h3>
+            <h3 className="text-lg font-semibold mb-4 text-neutral-900">クイックリンク</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="text-cyber-400 hover:text-cyber-500 transition-colors flex items-center group">
-                  <span className="mr-2 text-cyber-600 group-hover:text-cyber-500 transition-colors">▸</span>
+                <Link href="/" className="text-neutral-600 hover:text-brand-500 transition-colors">
                   ホーム
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-cyber-400 hover:text-cyber-500 transition-colors flex items-center group">
-                  <span className="mr-2 text-cyber-600 group-hover:text-cyber-500 transition-colors">▸</span>
+                <Link href="/about" className="text-neutral-600 hover:text-brand-500 transition-colors">
                   会社概要
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-cyber-400 hover:text-cyber-500 transition-colors flex items-center group">
-                  <span className="mr-2 text-cyber-600 group-hover:text-cyber-500 transition-colors">▸</span>
+                <Link href="/services" className="text-neutral-600 hover:text-brand-500 transition-colors">
                   サービス
                 </Link>
               </li>
               <li>
-                <Link href="/news" className="text-cyber-400 hover:text-cyber-500 transition-colors flex items-center group">
-                  <span className="mr-2 text-cyber-600 group-hover:text-cyber-500 transition-colors">▸</span>
+                <Link href="/news" className="text-neutral-600 hover:text-brand-500 transition-colors">
                   ニュース
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-cyber-400 hover:text-cyber-500 transition-colors flex items-center group">
-                  <span className="mr-2 text-cyber-600 group-hover:text-cyber-500 transition-colors">▸</span>
+                <Link href="/contact" className="text-neutral-600 hover:text-brand-500 transition-colors">
                   お問い合わせ
                 </Link>
               </li>
@@ -67,17 +57,15 @@ export default function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-cyber-300">法的情報</h3>
+            <h3 className="text-lg font-semibold mb-4 text-neutral-900">法的情報</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/privacy" className="text-cyber-400 hover:text-cyber-500 transition-colors flex items-center group">
-                  <span className="mr-2 text-cyber-600 group-hover:text-cyber-500 transition-colors">▸</span>
+                <Link href="/privacy" className="text-neutral-600 hover:text-brand-500 transition-colors">
                   プライバシーポリシー
                 </Link>
               </li>
               <li>
-                <Link href="/legal" className="text-cyber-400 hover:text-cyber-500 transition-colors flex items-center group">
-                  <span className="mr-2 text-cyber-600 group-hover:text-cyber-500 transition-colors">▸</span>
+                <Link href="/legal" className="text-neutral-600 hover:text-brand-500 transition-colors">
                   特定商取引法に基づく表記
                 </Link>
               </li>
@@ -86,15 +74,10 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 pt-8 border-t border-dark-border text-center">
-          <p className="text-cyber-500 text-sm">
-            © {currentYear} <span className="font-semibold">合同会社ピーチ</span>. All rights reserved.
+        <div className="mt-8 pt-8 border-t border-neutral-200 text-center">
+          <p className="text-neutral-600 text-sm">
+            © {currentYear} 合同会社ピーチ All rights reserved.
           </p>
-          <div className="mt-2 flex justify-center items-center space-x-2">
-            <div className="w-2 h-2 bg-cyber-500 rounded-full animate-pulse-neon"></div>
-            <p className="text-cyber-600 text-xs">Powered by Cyber Technology</p>
-            <div className="w-2 h-2 bg-neon-purple rounded-full animate-pulse-neon"></div>
-          </div>
         </div>
       </div>
     </footer>

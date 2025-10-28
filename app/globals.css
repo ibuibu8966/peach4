@@ -13,24 +13,9 @@
 }
 
 body {
-  @apply bg-dark-bg text-cyber-100 font-sans antialiased;
-  background-image:
-    radial-gradient(circle at 20% 50%, rgba(0, 217, 255, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.05) 0%, transparent 50%),
-    linear-gradient(rgba(0, 217, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 217, 255, 0.02) 1px, transparent 1px);
-  background-size: 100% 100%, 100% 100%, 80px 80px, 80px 80px;
-  background-position: 0 0, 0 0, -1px -1px, -1px -1px;
-}
-
-/* Cyber Grid Animation */
-@keyframes grid-flow {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 50px 50px;
-  }
+  @apply bg-neutral-white text-neutral-900 font-sans antialiased;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 /* Scrollbar Styling */
@@ -39,243 +24,161 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-dark-bg;
+  @apply bg-neutral-50;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-cyber-700 rounded-lg;
-  box-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+  @apply bg-neutral-400 rounded-lg;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-cyber-500;
-  box-shadow: 0 0 15px rgba(0, 217, 255, 0.7);
+  @apply bg-brand-500;
 }
 
-/* Premium Neon Text Effect */
-.neon-text {
-  text-shadow:
-    0 0 7px rgba(0, 217, 255, 0.9),
-    0 0 15px rgba(0, 217, 255, 0.7),
-    0 0 25px rgba(0, 217, 255, 0.5),
-    0 0 40px rgba(0, 217, 255, 0.3),
-    0 0 60px rgba(0, 217, 255, 0.2);
-  letter-spacing: 0.05em;
+/* Clean Business Card Styles */
+.business-card {
+  @apply bg-neutral-white border border-neutral-200 rounded-lg overflow-hidden;
+  @apply transition-all duration-300;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.neon-text-strong {
-  text-shadow:
-    0 0 3px rgba(0, 217, 255, 1),
-    0 0 7px rgba(0, 217, 255, 1),
-    0 0 15px rgba(0, 217, 255, 0.9),
-    0 0 25px rgba(0, 217, 255, 0.7),
-    0 0 40px rgba(0, 217, 255, 0.5),
-    0 0 60px rgba(0, 217, 255, 0.3);
-  letter-spacing: 0.1em;
-  font-weight: 700;
-}
-
-.premium-text {
-  background: linear-gradient(135deg, #00D9FF 0%, #00A6D6 50%, #0088B8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: 0.05em;
-}
-
-/* Neon Border Effect */
-.neon-border {
-  border: 2px solid #00D9FF;
-  box-shadow:
-    0 0 10px rgba(0, 217, 255, 0.5),
-    inset 0 0 10px rgba(0, 217, 255, 0.2);
-}
-
-.neon-border:hover {
-  box-shadow:
-    0 0 20px rgba(0, 217, 255, 0.8),
-    inset 0 0 15px rgba(0, 217, 255, 0.3);
-}
-
-/* Premium Cyber Button */
-.cyber-button {
-  @apply relative px-8 py-4 bg-transparent text-cyber-500 font-bold uppercase tracking-widest;
-  @apply border-2 border-cyber-500 transition-all duration-500;
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
-  box-shadow:
-    0 0 15px rgba(0, 217, 255, 0.3),
-    inset 0 0 15px rgba(0, 217, 255, 0.1);
-}
-
-.cyber-button:hover {
-  @apply bg-cyber-500 text-dark-bg;
-  box-shadow:
-    0 0 30px rgba(0, 217, 255, 0.6),
-    0 0 60px rgba(0, 217, 255, 0.4),
-    inset 0 0 20px rgba(0, 217, 255, 0.2);
+.business-card:hover {
+  @apply border-brand-500;
+  box-shadow: 0 4px 16px rgba(0, 105, 140, 0.15);
   transform: translateY(-2px);
 }
 
-.cyber-button::before {
-  content: '';
-  @apply absolute top-0 left-0 w-full h-full bg-gradient-to-r from-cyber-500 to-cyber-400 opacity-0 transition-all duration-500;
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
-  z-index: -1;
+/* Image Hover Effect */
+.image-hover {
+  @apply overflow-hidden transition-transform duration-700;
 }
 
-.cyber-button:hover::before {
-  @apply opacity-100;
+.image-hover img {
+  @apply transition-transform duration-700;
 }
 
-.cyber-button::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, transparent 30%, rgba(0, 217, 255, 0.3) 50%, transparent 70%);
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
-  opacity: 0;
-  transition: opacity 0.5s;
-  z-index: -2;
+.image-hover:hover img {
+  transform: scale(1.2);
 }
 
-.cyber-button:hover::after {
-  opacity: 1;
-  animation: shine 1.5s infinite;
+/* Button Styles */
+.btn-primary {
+  @apply px-6 py-3 bg-brand-500 text-neutral-white font-medium rounded;
+  @apply transition-all duration-300;
+  box-shadow: 0 2px 8px rgba(0, 105, 140, 0.2);
 }
 
-@keyframes shine {
-  0% {
-    background-position: -200% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
+.btn-primary:hover {
+  @apply bg-brand-600;
+  box-shadow: 0 4px 12px rgba(0, 105, 140, 0.3);
+  transform: translateY(-1px);
 }
 
-/* Glitch Effect */
-@keyframes glitch {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
-  }
-  100% {
-    transform: translate(0);
-  }
+.btn-secondary {
+  @apply px-6 py-3 bg-neutral-100 text-neutral-900 font-medium rounded;
+  @apply transition-all duration-300;
 }
 
-.glitch {
-  animation: glitch 0.3s infinite;
-}
-
-/* Premium Card Styles */
-.cyber-card {
-  @apply bg-dark-surface border border-dark-border rounded-xl overflow-hidden;
-  @apply transition-all duration-500;
-  box-shadow:
-    0 4px 20px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(0, 217, 255, 0.1);
-  backdrop-filter: blur(10px);
-  position: relative;
-}
-
-.cyber-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 0.75rem;
-  padding: 1px;
-  background: linear-gradient(135deg, rgba(0, 217, 255, 0.3), transparent 50%, rgba(139, 92, 246, 0.2));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.cyber-card:hover {
-  @apply border-cyber-500/50;
-  box-shadow:
-    0 10px 40px rgba(0, 0, 0, 0.5),
-    0 0 30px rgba(0, 217, 255, 0.3),
-    inset 0 1px 0 rgba(0, 217, 255, 0.2);
-  transform: translateY(-4px);
-}
-
-.cyber-card:hover::before {
-  opacity: 1;
-}
-
-/* Glass Card */
-.glass-card {
-  @apply bg-dark-surface/80 border border-cyber-700/30 rounded-2xl overflow-hidden backdrop-blur-xl;
-  @apply transition-all duration-500;
-  box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+.btn-secondary:hover {
+  @apply bg-neutral-200;
 }
 
 /* Section Divider */
 .section-divider {
-  @apply h-px bg-gradient-to-r from-transparent via-cyber-500 to-transparent;
-  box-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+  @apply h-px bg-neutral-200 my-8;
 }
 
-/* Pulse Animation */
-@keyframes pulse-slow {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
-.pulse-slow {
-  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-/* Loading Animation */
-@keyframes spin-slow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.spin-slow {
-  animation: spin-slow 3s linear infinite;
-}
-
-/* Link Hover Effect */
+/* Link Styles */
 a {
-  @apply transition-colors duration-200;
+  @apply text-brand-500 no-underline transition-colors duration-200;
 }
 
 a:hover {
-  @apply text-cyber-500;
+  @apply text-brand-600 underline;
+}
+
+/* Header Link Styles */
+.header-link {
+  @apply text-neutral-900 no-underline transition-colors duration-200;
+  position: relative;
+}
+
+.header-link:hover {
+  @apply text-brand-500;
+  text-decoration: none;
+}
+
+.header-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  @apply bg-brand-500;
+  transition: width 0.3s ease;
+}
+
+.header-link:hover::after {
+  width: 100%;
 }
 
 /* Selection Color */
 ::selection {
-  @apply bg-cyber-500 text-dark-bg;
+  @apply bg-brand-500 text-neutral-white;
 }
 
 ::-moz-selection {
-  @apply bg-cyber-500 text-dark-bg;
+  @apply bg-brand-500 text-neutral-white;
+}
+
+/* Clean Table Styles */
+table {
+  @apply w-full border-collapse;
+}
+
+table th,
+table td {
+  @apply px-4 py-3 text-left border-b border-neutral-200;
+}
+
+table th {
+  @apply bg-neutral-50 font-semibold text-neutral-900;
+}
+
+table tr:hover {
+  @apply bg-neutral-50;
+}
+
+/* Hero Section with Gradient Overlay */
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+/* Container Max Width */
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Fade In Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+/* Smooth Transitions */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

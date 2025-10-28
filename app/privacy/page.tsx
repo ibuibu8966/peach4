@@ -11,24 +11,24 @@ export default function Privacy() {
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Page Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-4 neon-text">
-            <span className="text-cyber-500">PRIVACY</span> POLICY
+          <h1 className="text-5xl font-bold mb-4 text-brand-500">
+            <span className="text-brand-500">PRIVACY</span> POLICY
           </h1>
           <div className="section-divider max-w-xs mx-auto mb-6"></div>
-          <p className="text-cyber-300 text-lg">
+          <p className="text-neutral-600 text-lg">
             プライバシーポリシー
           </p>
         </div>
 
-        <div className="cyber-card p-8 md:p-12">
-          <div className="prose prose-invert max-w-none space-y-8 text-cyber-300">
+        <div className="business-card p-8 md:p-12">
+          <div className="prose prose-invert max-w-none space-y-8 text-neutral-600">
             <p className="text-lg">
               合同会社ピーチ(以下、「当社」といいます。)は、本ウェブサイト上で提供するサービス(以下、「本サービス」といいます。)における、
               ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー(以下、「本ポリシー」といいます。)を定めます。
             </p>
 
             <section>
-              <h2 className="text-2xl font-bold text-cyber-500 mb-4 flex items-center">
+              <h2 className="text-2xl font-bold text-brand-500 mb-4 flex items-center">
                 <span className="w-1 h-8 bg-cyber-500 mr-3 shadow-neon-blue"></span>
                 第1条(個人情報)
               </h2>
@@ -42,7 +42,7 @@ export default function Privacy() {
             <div className="section-divider opacity-30"></div>
 
             <section>
-              <h2 className="text-2xl font-bold text-cyber-500 mb-4 flex items-center">
+              <h2 className="text-2xl font-bold text-brand-500 mb-4 flex items-center">
                 <span className="w-1 h-8 bg-cyber-500 mr-3 shadow-neon-blue"></span>
                 第2条(個人情報の収集方法)
               </h2>
@@ -57,7 +57,7 @@ export default function Privacy() {
             <div className="section-divider opacity-30"></div>
 
             <section>
-              <h2 className="text-2xl font-bold text-cyber-500 mb-4 flex items-center">
+              <h2 className="text-2xl font-bold text-brand-500 mb-4 flex items-center">
                 <span className="w-1 h-8 bg-cyber-500 mr-3 shadow-neon-blue"></span>
                 第3条(個人情報を収集・利用する目的)
               </h2>
@@ -76,7 +76,7 @@ export default function Privacy() {
             <div className="section-divider opacity-30"></div>
 
             <section>
-              <h2 className="text-2xl font-bold text-cyber-500 mb-4 flex items-center">
+              <h2 className="text-2xl font-bold text-brand-500 mb-4 flex items-center">
                 <span className="w-1 h-8 bg-cyber-500 mr-3 shadow-neon-blue"></span>
                 第4条(利用目的の変更)
               </h2>
@@ -89,7 +89,7 @@ export default function Privacy() {
             <div className="section-divider opacity-30"></div>
 
             <section>
-              <h2 className="text-2xl font-bold text-cyber-500 mb-4 flex items-center">
+              <h2 className="text-2xl font-bold text-brand-500 mb-4 flex items-center">
                 <span className="w-1 h-8 bg-cyber-500 mr-3 shadow-neon-blue"></span>
                 第5条(個人情報の第三者提供)
               </h2>
@@ -110,7 +110,7 @@ export default function Privacy() {
             <div className="section-divider opacity-30"></div>
 
             <section>
-              <h2 className="text-2xl font-bold text-cyber-500 mb-4 flex items-center">
+              <h2 className="text-2xl font-bold text-brand-500 mb-4 flex items-center">
                 <span className="w-1 h-8 bg-cyber-500 mr-3 shadow-neon-blue"></span>
                 第6条(個人情報の開示)
               </h2>
@@ -129,7 +129,7 @@ export default function Privacy() {
             <div className="section-divider opacity-30"></div>
 
             <section>
-              <h2 className="text-2xl font-bold text-cyber-500 mb-4 flex items-center">
+              <h2 className="text-2xl font-bold text-brand-500 mb-4 flex items-center">
                 <span className="w-1 h-8 bg-cyber-500 mr-3 shadow-neon-blue"></span>
                 第7条(個人情報の訂正および削除)
               </h2>
@@ -142,7 +142,7 @@ export default function Privacy() {
             <div className="section-divider opacity-30"></div>
 
             <section>
-              <h2 className="text-2xl font-bold text-cyber-500 mb-4 flex items-center">
+              <h2 className="text-2xl font-bold text-brand-500 mb-4 flex items-center">
                 <span className="w-1 h-8 bg-cyber-500 mr-3 shadow-neon-blue"></span>
                 第8条(個人情報の利用停止等)
               </h2>
@@ -156,7 +156,7 @@ export default function Privacy() {
             <div className="section-divider opacity-30"></div>
 
             <section>
-              <h2 className="text-2xl font-bold text-cyber-500 mb-4 flex items-center">
+              <h2 className="text-2xl font-bold text-brand-500 mb-4 flex items-center">
                 <span className="w-1 h-8 bg-cyber-500 mr-3 shadow-neon-blue"></span>
                 第9条(プライバシーポリシーの変更)
               </h2>
@@ -169,23 +169,23 @@ export default function Privacy() {
             <div className="section-divider opacity-30"></div>
 
             <section>
-              <h2 className="text-2xl font-bold text-cyber-500 mb-4 flex items-center">
+              <h2 className="text-2xl font-bold text-brand-500 mb-4 flex items-center">
                 <span className="w-1 h-8 bg-cyber-500 mr-3 shadow-neon-blue"></span>
                 第10条(お問い合わせ窓口)
               </h2>
               <p className="mb-4">本ポリシーに関するお問い合わせは、下記の窓口までお願いいたします。</p>
-              <div className="bg-dark-bg p-6 rounded-lg border border-cyber-700">
-                <p className="text-cyber-300">
+              <div className="bg-neutral-white p-6 rounded-lg border border-neutral-200">
+                <p className="text-neutral-600">
                   合同会社ピーチ<br />
                   Eメールアドレス:{' '}
-                  <a href="mailto:peach.2023.7.19@gmail.com" className="text-cyber-500 hover:text-cyber-300 transition-colors">
+                  <a href="mailto:peach.2023.7.19@gmail.com" className="text-brand-500 hover:text-neutral-600 transition-colors">
                     peach.2023.7.19@gmail.com
                   </a>
                 </p>
               </div>
             </section>
 
-            <div className="mt-12 text-right text-cyber-500">
+            <div className="mt-12 text-right text-brand-500">
               <p>制定日:2023年7月19日</p>
             </div>
           </div>
