@@ -111,6 +111,14 @@ export default function About() {
                       </ul>
                     </td>
                   </tr>
+                  <tr className="hover:bg-neutral-white/50 transition-colors">
+                    <td className="py-4 px-4 text-neutral-600 font-semibold">古物商許可番号</td>
+                    <td className="py-4 px-4 text-cyber-200">第441260002400号</td>
+                  </tr>
+                  <tr className="hover:bg-neutral-white/50 transition-colors">
+                    <td className="py-4 px-4 text-neutral-600 font-semibold">電気通信事業届出番号</td>
+                    <td className="py-4 px-4 text-cyber-200">A-07-22969</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
