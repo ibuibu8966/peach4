@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { getRecentNews } from '@/lib/news';
+import AnimatedSection from '@/components/AnimatedSection';
 
 export default function Home() {
   const recentNews = getRecentNews(3);
@@ -21,11 +22,11 @@ export default function Home() {
         </div>
         {/* Hero Content */}
         <div className="container mx-auto px-4 z-10 text-center">
-          <h1 className="text-6xl md:text-8xl font-black mb-10 text-neutral-white tracking-tighter leading-tight">
+          <h1 className="text-6xl md:text-8xl font-black mb-10 text-neutral-white tracking-tighter leading-tight animate-fade-in">
             未来を創造する
           </h1>
-          <div className="w-24 h-1.5 bg-brand-500 mx-auto mb-10"></div>
-          <p className="text-2xl md:text-3xl text-neutral-white max-w-4xl mx-auto font-light leading-relaxed">
+          <div className="w-24 h-1.5 bg-brand-500 mx-auto mb-10 animate-fade-in-delay-1"></div>
+          <p className="text-2xl md:text-3xl text-neutral-white max-w-4xl mx-auto font-light leading-relaxed animate-fade-in-delay-2">
             物販事業、オンラインサロン、MVNO事業を通じて<br />
             <span className="text-brand-300 font-medium">副業で収入を増やしたい方を全面サポート</span>
           </p>
@@ -94,82 +95,88 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Service 1: 物販事業 */}
-            <div className="business-card group">
-              <div className="image-hover relative h-64">
-                <Image
-                  src="/images/retail-business.jpeg"
-                  alt="物販事業"
-                  fill
-                  className="object-cover"
-                />
+            <AnimatedSection delay={0}>
+              <div className="business-card group">
+                <div className="image-hover relative h-64">
+                  <Image
+                    src="/images/retail-business.jpeg"
+                    alt="物販事業"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                    物販事業
+                  </h3>
+                  <p className="text-neutral-600 mb-6 leading-relaxed">
+                    電化製品を中心としたクローズド買取サービス
+                  </p>
+                  <Link href="/services#buppan" className="text-brand-500 hover:text-brand-600 font-medium inline-flex items-center group">
+                    詳しく見る
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-neutral-900 mb-4">
-                  物販事業
-                </h3>
-                <p className="text-neutral-600 mb-6 leading-relaxed">
-                  電化製品を中心としたクローズド買取サービス
-                </p>
-                <Link href="/services#buppan" className="text-brand-500 hover:text-brand-600 font-medium inline-flex items-center group">
-                  詳しく見る
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
+            </AnimatedSection>
 
             {/* Service 2: オンラインサロン */}
-            <div className="business-card group">
-              <div className="image-hover relative h-64">
-                <Image
-                  src="/images/salon.jpg"
-                  alt="オンラインサロン"
-                  fill
-                  className="object-cover"
-                />
+            <AnimatedSection delay={100}>
+              <div className="business-card group">
+                <div className="image-hover relative h-64">
+                  <Image
+                    src="/images/salon.jpg"
+                    alt="オンラインサロン"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                    オンラインサロン
+                  </h3>
+                  <p className="text-neutral-600 mb-6 leading-relaxed">
+                    物販で稼ぐための実践コミュニティ
+                  </p>
+                  <Link href="/services#salon" className="text-brand-500 hover:text-brand-600 font-medium inline-flex items-center group">
+                    詳しく見る
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-neutral-900 mb-4">
-                  オンラインサロン
-                </h3>
-                <p className="text-neutral-600 mb-6 leading-relaxed">
-                  物販で稼ぐための実践コミュニティ
-                </p>
-                <Link href="/services#salon" className="text-brand-500 hover:text-brand-600 font-medium inline-flex items-center group">
-                  詳しく見る
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
+            </AnimatedSection>
 
             {/* Service 3: BUPPAN MOBILE */}
-            <div className="business-card group">
-              <div className="image-hover relative h-64">
-                <Image
-                  src="/images/buppan-mobile.jpeg"
-                  alt="BUPPAN MOBILE"
-                  fill
-                  className="object-cover"
-                />
+            <AnimatedSection delay={200}>
+              <div className="business-card group">
+                <div className="image-hover relative h-64">
+                  <Image
+                    src="/images/buppan-mobile.jpeg"
+                    alt="BUPPAN MOBILE"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                    BUPPAN MOBILE
+                  </h3>
+                  <p className="text-neutral-600 mb-6 leading-relaxed">
+                    物販に最適化した格安SIM
+                  </p>
+                  <Link href="/services#mvno" className="text-brand-500 hover:text-brand-600 font-medium inline-flex items-center group">
+                    詳しく見る
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-neutral-900 mb-4">
-                  BUPPAN MOBILE
-                </h3>
-                <p className="text-neutral-600 mb-6 leading-relaxed">
-                  物販に最適化した格安SIM
-                </p>
-                <Link href="/services#mvno" className="text-brand-500 hover:text-brand-600 font-medium inline-flex items-center group">
-                  詳しく見る
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
