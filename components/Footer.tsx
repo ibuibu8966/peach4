@@ -64,11 +64,6 @@ export default function Footer() {
                   プライバシーポリシー
                 </Link>
               </li>
-              <li>
-                <Link href="/legal" className="text-neutral-600 hover:text-brand-500 transition-colors">
-                  特定商取引法に基づく表記
-                </Link>
-              </li>
             </ul>
           </div>
         </div>

@@ -8,69 +8,78 @@ export const metadata: Metadata = {
 
 export default function Services() {
   return (
-    <div className="pt-28 pb-12">
-      <div className="container mx-auto px-4 max-w-4xl">
+    <div className="pt-28 pb-20">
+      <div className="container mx-auto px-4 max-w-5xl">
         {/* Page Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold mb-4 text-brand-500">
+        <div className="text-center mb-20">
+          <h1 className="text-5xl font-bold mb-4 text-neutral-900">
             サービス紹介
           </h1>
-          <div className="section-divider max-w-xs mx-auto mb-6"></div>
-          <p className="text-neutral-600 text-lg">
-            私たちが提供する3つのサービス
+          <div className="w-20 h-1 bg-brand-500 mx-auto mb-8"></div>
+          <p className="text-neutral-600 text-xl font-light max-w-3xl mx-auto">
+            副業で収入を増やしたい方を全面サポート。<br />
+            物販ノウハウ、実践の場、通信インフラを一貫して提供します。
           </p>
         </div>
 
-        {/* Service 1: 物販事業 */}
-        <section id="buppan" className="mb-12">
-          <div className="business-card p-8">
-            <h2 className="text-3xl font-bold text-brand-500 mb-4">
-              物販事業
+        {/* Service 1: オンラインサロン */}
+        <section id="salon" className="mb-16">
+          <div className="business-card p-12">
+            <h2 className="text-3xl font-bold text-neutral-900 mb-6">
+              オンラインサロン
             </h2>
-            <p className="text-neutral-600 text-lg mb-6">
-              中古品や金券の買取・販売を通じて、お客様の資産を最大限に活用するお手伝いをしています。
+            <p className="text-neutral-600 text-lg mb-8 leading-relaxed">
+              副業で収入を増やしたい方向けの物販実践コミュニティです。
+              物販事業を行う中で「自分も物販を始めたい」という声を多くいただき、サロンを立ち上げました。
             </p>
             <div className="space-y-4">
               <div>
-                <h3 className="text-xl font-semibold text-neutral-900 mb-3">取扱商品</h3>
+                <h3 className="text-xl font-semibold text-neutral-900 mb-3">サロンの特徴</h3>
                 <ul className="space-y-2 text-neutral-600">
-                  <li>• ブランド品・貴金属</li>
-                  <li>• 商品券・ギフトカード</li>
-                  <li>• 電化製品・デジタル機器</li>
-                  <li>• その他中古品全般</li>
+                  <li>• 最新の物販情報をいち早く提供</li>
+                  <li>• 市場のトレンドを逃さず、チャンスを掴める</li>
+                  <li>• 初心者の方でも着実に収益を上げられる環境</li>
+                  <li>• 実店舗を持つ方、副業を始めたい方など多様なメンバー</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-neutral-900 mb-3">特徴</h3>
+                <h3 className="text-xl font-semibold text-neutral-900 mb-3">提供内容</h3>
                 <ul className="space-y-2 text-neutral-600">
-                  <li>• 市場価格を踏まえた適正な査定</li>
-                  <li>• 迅速な査定と即日現金化</li>
-                  <li>• 古物商許可取得済み</li>
+                  <li>• 物販ノウハウの共有</li>
+                  <li>• メンバー同士の情報交換</li>
+                  <li>• 個別サポート</li>
+                  <li>• クローズドな買取サービスの利用権</li>
                 </ul>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Service 2: オンラインサロン */}
-        <section id="salon" className="mb-12">
-          <div className="business-card p-8">
-            <h2 className="text-3xl font-bold text-brand-500 mb-4">
-              オンラインサロン
+        {/* Service 2: 物販事業 */}
+        <section id="buppan" className="mb-16">
+          <div className="business-card p-12">
+            <h2 className="text-3xl font-bold text-neutral-900 mb-6">
+              物販事業
             </h2>
-            <p className="text-neutral-600 text-lg mb-6">
-              実店舗を持つ方々向けの物販副業サポートコミュニティです。
-              物販のプロが直接指導し、会員同士で情報交換できる環境を提供しています。
+            <p className="text-neutral-600 text-lg mb-8 leading-relaxed">
+              オンラインサロン会員様向けに、電化製品を中心としたクローズドな買取サービスを提供しています。
+              サロンで学んだノウハウを実践する場として、確実な買取ルートを確保しています。
             </p>
             <div className="space-y-4">
               <div>
-                <h3 className="text-xl font-semibold text-neutral-900 mb-3">提供内容</h3>
+                <h3 className="text-xl font-semibold text-neutral-900 mb-3">取扱商品</h3>
                 <ul className="space-y-2 text-neutral-600">
-                  <li>• 物販のプロによる直接指導</li>
-                  <li>• 会員同士の情報交換</li>
-                  <li>• 最新トレンドとノウハウの共有</li>
-                  <li>• 定期的なオンラインセミナー</li>
-                  <li>• 仕入れルート・販売チャネルの情報提供</li>
+                  <li>• 電化製品・デジタル機器</li>
+                  <li>• その他サロン会員が取り扱う商材</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-neutral-900 mb-3">特徴</h3>
+                <ul className="space-y-2 text-neutral-600">
+                  <li>• サロン会員限定のクローズドサービス</li>
+                  <li>• スムーズな取引と信頼関係</li>
+                  <li>• 仕入れから販売までの実践の場</li>
+                  <li>• 物販ビジネスの本質を体得できる環境</li>
                 </ul>
               </div>
             </div>
@@ -78,15 +87,25 @@ export default function Services() {
         </section>
 
         {/* Service 3: BUPPAN MOBILE */}
-        <section id="mvno" className="mb-12">
-          <div className="business-card p-8">
-            <h2 className="text-3xl font-bold text-brand-500 mb-4">
+        <section id="mvno" className="mb-16">
+          <div className="business-card p-12">
+            <h2 className="text-3xl font-bold text-neutral-900 mb-6">
               BUPPAN MOBILE
             </h2>
-            <p className="text-neutral-600 text-lg mb-6">
-              NTTドコモ回線を利用した格安通信サービスです。
-              音声通話とSMSが標準搭載で、1GB/月880円から利用できます。
+            <p className="text-neutral-600 text-lg mb-8 leading-relaxed">
+              サロン運営の中で「物販に特化した格安SIMが欲しい」という要望を多くいただき、BUPPAN MOBILEを開始しました。
+              NTTドコモ回線を利用した高品質な通信環境で、物販ビジネスに最適な料金プランとデータ容量を提供しています。
             </p>
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold text-neutral-900 mb-3">BUPPAN MOBILEの特徴</h3>
+              <ul className="space-y-2 text-neutral-600">
+                <li>• 物販ビジネスに最適化された料金プランとデータ容量</li>
+                <li>• 複数端末での商品リサーチや在庫管理もコストを抑えて実現</li>
+                <li>• NTTドコモ回線による高品質な通信環境</li>
+                <li>• 外出先でも安心して仕入れ活動が可能</li>
+                <li>• 事業拡大に伴う通信コストの増大を抑制</li>
+              </ul>
+            </div>
 
             <div className="space-y-6">
               {/* 料金プラン */}
@@ -131,7 +150,7 @@ export default function Services() {
               {/* 外部リンク */}
               <div className="pt-4">
                 <a
-                  href="https://buppan-mobile.com"
+                  href="https://buppanmobile2.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-brand-500 hover:text-brand-600 font-semibold inline-flex items-center"
@@ -146,20 +165,6 @@ export default function Services() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="mt-16 text-center">
-          <div className="business-card p-8 bg-neutral-50">
-            <h2 className="text-2xl font-bold text-neutral-900 mb-4">
-              サービスに関するお問い合わせ
-            </h2>
-            <p className="text-neutral-600 mb-6">
-              各サービスの詳細やご不明な点がございましたら、お気軽にお問い合わせください。
-            </p>
-            <Link href="/contact" className="btn-primary">
-              お問い合わせはこちら
-            </Link>
-          </div>
-        </section>
       </div>
     </div>
   );

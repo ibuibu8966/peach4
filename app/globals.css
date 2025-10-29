@@ -37,9 +37,9 @@ body {
 
 /* Clean Business Card Styles */
 .business-card {
-  @apply bg-neutral-white border border-neutral-200 rounded-lg overflow-hidden;
+  @apply bg-neutral-white border border-neutral-200 rounded overflow-hidden;
   @apply transition-all duration-300;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .business-card:hover {
@@ -50,28 +50,27 @@ body {
 
 /* Image Hover Effect */
 .image-hover {
-  @apply overflow-hidden transition-transform duration-700;
+  @apply overflow-hidden transition-transform duration-500;
 }
 
 .image-hover img {
-  @apply transition-transform duration-700;
+  @apply transition-transform duration-500;
 }
 
 .image-hover:hover img {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 /* Button Styles */
 .btn-primary {
-  @apply px-6 py-3 bg-brand-500 text-neutral-white font-medium rounded;
-  @apply transition-all duration-300;
-  box-shadow: 0 2px 8px rgba(0, 105, 140, 0.2);
+  @apply px-8 py-3 bg-brand-500 text-neutral-white font-medium rounded;
+  @apply transition-all duration-200;
+  box-shadow: none;
 }
 
 .btn-primary:hover {
   @apply bg-brand-600;
-  box-shadow: 0 4px 12px rgba(0, 105, 140, 0.3);
-  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 105, 140, 0.2);
 }
 
 .btn-secondary {

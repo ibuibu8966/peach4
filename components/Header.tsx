@@ -25,28 +25,28 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 bg-neutral-white ${
         isScrolled
-          ? 'bg-neutral-white shadow-medium'
-          : 'bg-neutral-white border-b border-neutral-200'
+          ? 'shadow-sm'
+          : 'border-b border-neutral-200'
       }`}
     >
-      <nav className="container mx-auto px-6 py-4">
+      <nav className="container mx-auto px-6 py-5">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="text-lg sm:text-2xl font-bold text-brand-500">
+          <Link href="/" className="flex items-center">
+            <div className="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight">
               合同会社ピーチ
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-10">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="header-link text-sm font-medium"
+                className="header-link text-sm font-medium tracking-wide"
               >
                 {link.label}
               </Link>

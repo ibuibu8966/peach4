@@ -7,26 +7,23 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div className="pt-28 pb-12">
+    <div className="pt-28 pb-20">
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Page Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-4 text-brand-500">
-            <span className="text-brand-500">ABOUT</span> US
+        <div className="text-center mb-20">
+          <h1 className="text-5xl font-bold mb-4 text-neutral-900">
+            ABOUT US
           </h1>
-          <div className="section-divider max-w-xs mx-auto mb-6"></div>
-          <p className="text-neutral-600 text-lg">
+          <div className="w-20 h-1 bg-brand-500 mx-auto mb-8"></div>
+          <p className="text-neutral-600 text-xl font-light">
             合同会社ピーチについて
           </p>
         </div>
 
         {/* CEO Message */}
-        <section className="mb-16">
-          <div className="business-card p-8 md:p-12">
-            <div className="flex items-center mb-6">
-              <div className="w-1 h-12 bg-cyber-500 mr-4 shadow-neon-blue"></div>
-              <h2 className="text-3xl font-bold text-brand-500">代表挨拶</h2>
-            </div>
+        <section className="mb-20">
+          <div className="business-card p-12">
+            <h2 className="text-3xl font-bold text-neutral-900 mb-8">代表挨拶</h2>
             <div className="space-y-4 text-neutral-600 leading-relaxed">
               <p>
                 合同会社ピーチのウェブサイトをご覧いただき、誠にありがとうございます。
@@ -46,13 +43,13 @@ export default function About() {
                 そして、BUPPAN MOBILEでは、NTTドコモの高品質な回線を利用したMVNOサービスを提供し、
                 お客様に安心・安全な通信環境をお届けしています。
               </p>
-              <p className="text-brand-500 font-semibold pt-4">
+              <p className="pt-4 font-medium text-neutral-700">
                 これからも、お客様に寄り添い、共に成長していく企業であり続けます。
               </p>
-              <div className="pt-6 border-t border-neutral-200 mt-8">
-                <p className="text-right text-neutral-600">
+              <div className="pt-8 border-t border-brand-500 mt-8">
+                <p className="text-right text-neutral-700">
                   合同会社ピーチ<br />
-                  代表社員 <span className="text-brand-500 font-semibold text-lg">宮崎 忍</span>
+                  代表社員 <span className="text-brand-500 font-bold text-xl">宮崎 忍</span>
                 </p>
               </div>
             </div>
@@ -60,12 +57,9 @@ export default function About() {
         </section>
 
         {/* Company Information */}
-        <section className="mb-16">
-          <div className="business-card p-8 md:p-12">
-            <div className="flex items-center mb-8">
-              <div className="w-1 h-12 bg-cyber-500 mr-4 shadow-neon-blue"></div>
-              <h2 className="text-3xl font-bold text-brand-500">会社情報</h2>
-            </div>
+        <section className="mb-20">
+          <div className="business-card p-12">
+            <h2 className="text-3xl font-bold text-neutral-900 mb-8">会社情報</h2>
             <div className="overflow-x-auto">
               <table className="w-full">
                 <tbody className="divide-y divide-dark-border">
@@ -125,46 +119,39 @@ export default function About() {
 
         {/* Company History */}
         <section>
-          <div className="business-card p-8 md:p-12">
-            <div className="flex items-center mb-8">
-              <div className="w-1 h-12 bg-cyber-500 mr-4 shadow-neon-blue"></div>
-              <h2 className="text-3xl font-bold text-brand-500">沿革</h2>
-            </div>
-            <div className="space-y-6">
-              <div className="flex group hover:bg-neutral-white/30 p-4 rounded-lg transition-all">
-                <div className="flex-shrink-0 w-32 text-brand-500 font-bold group-hover:text-neutral-600 transition-colors">
+          <div className="business-card p-12">
+            <h2 className="text-3xl font-bold text-neutral-900 mb-8">沿革</h2>
+            <div className="space-y-8">
+              <div className="flex gap-6 pb-6 border-b border-neutral-200">
+                <div className="flex-shrink-0 w-32 text-brand-500 font-semibold text-lg">
                   2023年7月
                 </div>
                 <div className="flex-grow">
-                  <div className="w-3 h-3 bg-cyber-500 rounded-full mb-2 shadow-neon-blue group-hover:scale-125 transition-transform"></div>
-                  <p className="text-cyber-200">合同会社ピーチ設立</p>
+                  <p className="text-neutral-700">合同会社ピーチ設立</p>
                 </div>
               </div>
-              <div className="flex group hover:bg-neutral-white/30 p-4 rounded-lg transition-all">
-                <div className="flex-shrink-0 w-32 text-brand-500 font-bold group-hover:text-neutral-600 transition-colors">
+              <div className="flex gap-6 pb-6 border-b border-neutral-200">
+                <div className="flex-shrink-0 w-32 text-brand-500 font-semibold text-lg">
                   2023年8月
                 </div>
                 <div className="flex-grow">
-                  <div className="w-3 h-3 bg-cyber-500 rounded-full mb-2 shadow-neon-blue group-hover:scale-125 transition-transform"></div>
-                  <p className="text-cyber-200">BUPPAN MOBILEサービス開始</p>
+                  <p className="text-neutral-700">オンラインサロン開設</p>
                 </div>
               </div>
-              <div className="flex group hover:bg-neutral-white/30 p-4 rounded-lg transition-all">
-                <div className="flex-shrink-0 w-32 text-brand-500 font-bold group-hover:text-neutral-600 transition-colors">
-                  2023年9月
-                </div>
-                <div className="flex-grow">
-                  <div className="w-3 h-3 bg-cyber-500 rounded-full mb-2 shadow-neon-blue group-hover:scale-125 transition-transform"></div>
-                  <p className="text-cyber-200">オンラインサロン開設</p>
-                </div>
-              </div>
-              <div className="flex group hover:bg-neutral-white/30 p-4 rounded-lg transition-all">
-                <div className="flex-shrink-0 w-32 text-brand-500 font-bold group-hover:text-neutral-600 transition-colors">
+              <div className="flex gap-6 pb-6 border-b border-neutral-200">
+                <div className="flex-shrink-0 w-32 text-brand-500 font-semibold text-lg">
                   2025年10月
                 </div>
                 <div className="flex-grow">
-                  <div className="w-3 h-3 bg-neon-purple rounded-full mb-2 shadow-neon-purple group-hover:scale-125 transition-transform"></div>
-                  <p className="text-cyber-200">コーポレートサイトリニューアル</p>
+                  <p className="text-neutral-700">BUPPAN MOBILEサービス開始</p>
+                </div>
+              </div>
+              <div className="flex gap-6">
+                <div className="flex-shrink-0 w-32 text-brand-500 font-semibold text-lg">
+                  2025年10月
+                </div>
+                <div className="flex-grow">
+                  <p className="text-neutral-700">コーポレートサイトリニューアル</p>
                 </div>
               </div>
             </div>
